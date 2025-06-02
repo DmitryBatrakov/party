@@ -5,6 +5,19 @@ import { Pacifico } from 'next/font/google';
 import { Fira_Code } from 'next/font/google';
 import { Playwrite_HU } from 'next/font/google';
 
+export const metadata = {
+  title: "Девишник Катюши",
+  description: "Тёплые пожелания и воспоминания в честь девичника Кати. Загляни внутрь 💕",
+   openGraph: {
+    title: 'Девичник Катюши 💍',
+    description: 'Тёплые пожелания и воспоминания в честь девичника Кати. Загляни внутрь 💕',
+    url: 'https://party-production-58fb.up.railway.app/', 
+    siteName: 'Девичник Катюши',
+    locale: 'ru_RU',
+    type: 'website',
+  },
+}
+
 
 const fira = Fira_Code({
   subsets: ['latin'],
