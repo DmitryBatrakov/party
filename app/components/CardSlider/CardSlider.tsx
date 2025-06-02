@@ -7,8 +7,6 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css";
 import "swiper/css/pagination";
-// import { IoMdArrowDropright } from "react-icons/io";
-// import { IoMdArrowDropleft } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 
 type Card = {
@@ -79,12 +77,6 @@ export default function CardSlider() {
         Advice for the bridge-to-be
       </h1>
       <div className="flex w-full">
-        {/* <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className=" text-rose-300 rounded-xl"
-        >
-          <IoMdArrowDropleft size={30} />
-        </button> */}
         <Swiper
           modules={[Pagination, Autoplay, Navigation]}
           spaceBetween={20}
@@ -124,7 +116,7 @@ export default function CardSlider() {
                     <span>{card.wishes}</span>
                   </div>
                 </div>
-                <div className="text-right w-full pt-3">
+                <div className="text-right w-full pt-3 mb-3">
                   <span className="inline-flex items-center gap-1 text-lg text-rose-300">
                     <span className="font-pacifico">С любовью твоя :</span>
                     <span className="font-normal">{card.from}</span>
@@ -135,12 +127,6 @@ export default function CardSlider() {
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* <button
-          onClick={() => swiperRef.current?.slideNext()}
-          className=" text-rose-300 rounded-xl"
-        >
-          <IoMdArrowDropright size={30} />
-        </button> */}
       </div>
     </div>
   );
