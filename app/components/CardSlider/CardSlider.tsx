@@ -7,8 +7,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css";
 import "swiper/css/pagination";
-import { IoMdArrowDropright } from "react-icons/io";
-import { IoMdArrowDropleft } from "react-icons/io";
+// import { IoMdArrowDropright } from "react-icons/io";
+// import { IoMdArrowDropleft } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 
 type Card = {
