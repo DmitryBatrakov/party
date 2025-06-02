@@ -10,7 +10,7 @@ export default function Link() {
         href="https://drive.google.com/drive/folders/1gY-VZMZ0x9C2gXeuBuLKwuHztxFakCDD"
         rel="noopener noreferrer"
       >
-        Открыть папку
+        Открыть диск
       </a>
     </div>
   );
