@@ -16,8 +16,14 @@ export const metadata = {
     locale: 'ru_RU',
     type: 'website',
   },
+   images: [
+      {
+        url: 'https://party-production-58fb.up.railway.app/og-image.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ]
 }
-
 
 const fira = Fira_Code({
   subsets: ['latin'],
