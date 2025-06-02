@@ -74,17 +74,17 @@ export default function CardSlider() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <div className="">
+    <div className="w-full h-full">
       <h1 className="text-center py-2 text-xl font-semibold text-rose-300">
         Advice for the bridge-to-be
       </h1>
-      <div className="flex gap-2">
-        <button
+      <div className="flex w-full">
+        {/* <button
           onClick={() => swiperRef.current?.slidePrev()}
           className=" text-rose-300 rounded-xl"
         >
           <IoMdArrowDropleft size={30} />
-        </button>
+        </button> */}
         <Swiper
           modules={[Pagination, Autoplay, Navigation]}
           spaceBetween={20}
@@ -101,7 +101,7 @@ export default function CardSlider() {
         >
           {cards.map((card) => (
             <SwiperSlide key={card.id}>
-              <div className=" p-3 rounded-xl border-rose-300 border text-rose-300 flex flex-col justify-between min-h-[370px]">
+              <div className=" p-3 rounded-xl border-rose-300 border text-rose-300 flex flex-col justify-between min-h-[350px] h-full">
                 <div>
                   <div>
                     <span className="font-pacifico text-lg">Всегда: </span>
@@ -124,7 +124,7 @@ export default function CardSlider() {
                     <span>{card.wishes}</span>
                   </div>
                 </div>
-                <div className="text-right w-full p-3">
+                <div className="text-right w-full pt-3">
                   <span className="inline-flex items-center gap-1 text-lg text-rose-300">
                     <span className="font-pacifico">С любовью твоя :</span>
                     <span className="font-normal">{card.from}</span>
@@ -135,12 +135,12 @@ export default function CardSlider() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button
+        {/* <button
           onClick={() => swiperRef.current?.slideNext()}
           className=" text-rose-300 rounded-xl"
         >
           <IoMdArrowDropright size={30} />
-        </button>
+        </button> */}
       </div>
     </div>
   );
